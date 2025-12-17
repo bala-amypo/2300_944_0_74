@@ -1,10 +1,18 @@
-package com.example.demo.newrepository;
-import org.springframework.data.jpa.newrepository.JpaRepository;
-import org.springframework.stereotype.Repository;
+package com.example.demo.newservice;
 
-import com.example.demo.newentity.StudentValidation;
+import java.util.List;
 
-@Repository
-public interface  NewStudentRepo extends JpaRepository<StudentValidation,Long>{
+import com.example.demo.newentity.NewfileEntity;
 
+public interface NewfileService {
+
+    NewfileEntity savedata(NewfileEntity newfile);
+
+    NewfileEntity getidval(Long id);
+
+    List<NewfileEntity> getall();
+
+    NewfileEntity update(Long id, NewfileEntity newfile);
+
+    void delete(Long id);
 }
