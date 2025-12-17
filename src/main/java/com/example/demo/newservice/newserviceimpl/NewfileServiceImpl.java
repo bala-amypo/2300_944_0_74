@@ -13,7 +13,6 @@ public class NewfileServiceImpl implements NewfileService {
     public NewfileServiceImpl() {
         this.rep = rep;
     }
-}
     @Override
     public NewfileEntity savedata(NewfileEntity newfile) {
     }
